@@ -16,7 +16,7 @@ public class Recurse {
 
 	public static void printString(String s) {
 		if (length(s) > 0) {
-			System.out.print(first(s));
+			System.out.println(first(s));
 			printString(rest(s));
 		}
 	}
@@ -24,7 +24,7 @@ public class Recurse {
 	public static void printBackward(String s) {
 		if (length(s) > 0) {
 			printBackward(rest(s));
-			System.out.print(first(s));
+			System.out.println(first(s));
 		}
 	}
 
